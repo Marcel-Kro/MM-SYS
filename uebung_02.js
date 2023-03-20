@@ -60,7 +60,7 @@ var library = {
 };
 var books = [
     {
-        title: 'JavaScript for impatient programmers';
+        title: 'JavaScript for impatient programmers',
         isbn: 1091210098,
         pages: 526,
         language: 'en'
