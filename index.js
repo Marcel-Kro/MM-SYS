@@ -1,5 +1,5 @@
 
-//alert("Ergebnisse sind im Console Log");
+alert("Ergebnisse sind im Console Log");
 
 // Übung 1
 console.log("=== Übung 1 - Arrays ===");
