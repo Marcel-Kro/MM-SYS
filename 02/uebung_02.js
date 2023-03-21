@@ -1,3 +1,6 @@
+
+alert("Ergebnisse sind im Console Log");
+
 // Übung 2
 console.log("=== Übung 2 - Objekte ===");
 
@@ -18,34 +21,34 @@ console.log();
 // Übung 2.1a
 // Löschen Sie die Eigenschaft 'description' aus dem Objekt 'course'.
 console.log("== Übung 2.1a ==");
-
-console.log();
+delete course.description;
+console.log(course);
 
 // Übung 2.1b
 // Ändern Sie den Wert der Eigenschaft 'room' im Objekt 'course'.
 console.log("== Übung 2.1b ==");
-
-console.log();
+course.room = '2E.2.37';
+console.log(course);
 
 // Übung 2.1c
 // Fügen Sie dem Objekt 'course' eine neue Eigenschaft 'lecturer' hinzu und weisen Sie ihr einen passenden Wert zu.
 console.log("== Übung 2.1c ==");
-// lecturer: 'Herr Rose',
-console.log();
+course.lecturer = 'Marcel Rose';
+console.log(course);
 
 // Übung 2.1d
 // Wenden Sie eine Methode an, die die Eigenschaft des Objekts 'course' in einem neuen Array zurückgibt 
 // und weisen Sie dieses Array einer neuen Variable zu. Kürzen Sie Ihren Code, soweit es geht.
 console.log("== Übung 2.1d ==");
-
-console.log();
+var courseArray = Object.entries(course);
+console.log(courseArray);
 
 // Übung 2.1e
 // Führen Sie das Objekt 'moreCourseInformations' mithilfe einer Methode mit dem Objekt 'course' zusammen.
 // Überschreiben Sie den Wert der Variablen 'course' mit dem zusammengeführten Objekt. Kürzen Sie Ihren Code, soweit es geht.
 console.log("== Übung 2.1e ==");
-
-console.log();
+var course = Object.assign(course, moreCourseInformations);
+console.log(course);
 
 // 2.2 Advanced
 console.log();
@@ -72,30 +75,32 @@ var books = [
         language: 'en',
     }
 ];
-var student = {
-    id: 1391,
-    firstName: 'Jonas',
-    lastName: 'Schulz',
-    major: 'bim'
-};
 
 // Übung 2.2a
 // Geben Sie an, wie man auf den Wert der Eigenschaft 'digital' aus dem untergeordneten Objekt, 
 // das der Objekt-Eigenschaft 'books' im Objekt 'library' zugewiesen ist, zugreifen kann.
 console.log("== Übung 2.2a ==");
-
-console.log();
+console.log(library.books.digital);
 
 // Übung 2.2b
 // Geben Sie an, wie man auf den Wert 'pages' im zweiten Objekt aus dem Array 'books' zugreifen kann.
 console.log("== Übung 2.2b ==");
 
-console.log();
+console.log(books[1]['pages']);
 
 // Übung 2.2c
 // Erweitern Sie das Objekt 'student', in dem Sie dafür eine Objekt-Methode 'fullName' erstellen.
 // Die Methode soll die Werte der Eigenschaft 'firstName' und 'lastName' konkatenieren und das Ergebnis zurückgeben.
 // Rufen Sie anschließend die Methode über das Objekt auf und weisen Sie den Rückgabewert einer neuen Variable zu.
 console.log("== Übung 2.2c ==");
-
-console.log();
+var student = {
+    id: 1391,
+    firstName: 'Jonas',
+    lastName: 'Schulz',
+    major: 'bim',
+    fullName: function(){
+        return this.firstName+' '+this.lastName;
+    }
+};
+var studentFullName = student.fullName();
+console.log(studentFullName);
