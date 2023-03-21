@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<img lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/uebung_04.js"></script>
+    <script src="/04/uebung_04.js"></script>
+    <style>
+        .loading {
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <div style="border:thin;border-style:solid;border-color:black; margin:5px">
+        <b>4.1b</b>
+        <h5  id="subHeadline">H5</h5>
+    </div>
+    <div style="width:100%; height:100%">
+        <div style="border:thin;border-style:solid;border-color:black; margin:5px">
+            <b>4.1c</b>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" width="50px" height="50px">
+        </div>
+        <div style="border:thin;border-style:solid;border-color:black; margin:5px">
+            <b>4.1d</b>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit a</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit a</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit a</p>
+        </div>
+        <div style="border:thin;border-style:solid;border-color:black; margin:5px">
+            <b>4.1e</b>
+            <ul class="list">
+                <li>Erstes Element</li>
+                <li>Zweites Element</li>
+                <li>Drittes Element</li>
+            </ul>
+        </div>   
+        <b>Advanced</b>
+        <div style="border:thin;border-style:solid;border-color:black; display:flex; margin:5px">
+            <div style="width:30%"><b>4.2a</b></div>
+            <div style="width:30%">
+                <label for="search">Search...</label>
+                <input type="text" id="search" name="search">
+            </div>
+            <div id="loadingContainer" style="width:40%"></div>
+        </div>
+        <div style="border:thin;border-style:solid;border-color:black; margin:5px">
+            <b>4.2b</b>
+            <div id="alertEmptyFields">
+                Alle Felder ausfüllen!
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <label for="checkbox">Check</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <button id="btn">Button</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
