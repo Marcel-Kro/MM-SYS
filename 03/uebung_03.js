@@ -1,3 +1,6 @@
+
+alert("Ergebnisse sind im Console Log");
+
 // Übung 3
 console.log("=== Übung 3 - Funktionen und Kontrollstrukturen ===");
 
