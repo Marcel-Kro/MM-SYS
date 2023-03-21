@@ -5,9 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
     <script src="/uebung_05.js"></script>
+    <style>
+        #image {
+            display: none;
+        }
+        table, th , td{
+            border: 1px solid;
+            width:50%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container01" style="border:thin;border-style:solid; padding:5px; margin:10px; width: 385px"></div>
+    <div style="border:thin;border-style:solid; margin:5px">
+        <b>5.1b</b>
+        <input type="checkbox" id="remember">
+    </div>
+    <div style="border:thin;border-style:solid; margin:5px">
+        <b>5.1c</b>
+        <h1>H1 Überschrift</h1>
+    </div>
+    <div style="border:thin;border-style:solid;border-color:black; margin:5px">
+        <b>5.1d</b>
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" width="50px" height="50px">
+    </div>
+    <div style="border:thin;border-style:solid; margin:5px">
+        <b>5.1e</b>
+        <div class="container02">
+            <ul>
+                <li>Listenpunkt 1</li>
+                <li>Listenpunkt 2</li>
+                <li>Listenpunkt 3</li>
+            </ul>
+        </div>
+    </div>
+    <b>Advanced</b>
+    <div style="border:thin;border-style:solid; margin:5px">
+        <b>5.2a + 5.2b</b>
+        <div id="warning" style="background-color:tomato; width:50%">
+            Vor- und Nachnamen eintragen
+        </div>
+        <div style="margin-top:10px; margin-bottom:10px">
+            <input type="text" id="first" placeholder="Vorname">
+            <input type="text" id="last" placeholder="Nachname">
+            <button id="addName">Hinzufügen</button>
+            <button id="removeTable" style="background-color:tomato">Reset</button>
+        </div>
+        <div style="padding-bottom:5px">
+            <table id="table">
+                <thead >
+                    <th>Vorname</th>
+                    <th>Nachname</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
