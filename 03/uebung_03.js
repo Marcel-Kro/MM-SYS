@@ -59,13 +59,12 @@ for (i = 0; i <= 10; i++){
     }
 };
 
-// 3.2 Advanced
+// 3.2 Funktionen (und Kontrollstrukturen)
 console.log();
-console.log("=== 3.2 - Advanced ===");
-console.log();
-
-
 console.log("=== 3.2 - Funktionen ===");
+console.log();
+
+
 // Übung 3.2a
 // Schreiben Sie eine Funktion 'numberIsOdd', die
 // - einen Parameter 'num' entgegennimmt.
