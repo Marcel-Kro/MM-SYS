@@ -3,8 +3,9 @@ alert("Ergebnisse sind im Console Log");
 
 // Übung 3
 console.log("=== Übung 3 - Funktionen und Kontrollstrukturen ===");
+console.log();
 
-// Variable
+// Variablen
 var word1 = 'informationsmanagement';
 var word2 = 'multimediasysteme';
 var text;
@@ -13,7 +14,6 @@ var i = 0;
 var list = [];
 
 var numList = [3, 4, 9];
-console.log();
 
 console.log("=== 3.1 - Kontrollstrukturen ===");
 // Übung 3.1a
@@ -28,11 +28,12 @@ console.log("=== 3.1 - Kontrollstrukturen ===");
 // Wenn 'word1' und 'word2' gleich lang sind, soll der Variable 'text' folgender String zugewisen werden:
 // 'Die Wörter sind gleich lang.'.
 console.log("== Übung 3.1a ==");
-if (word1.length > word2.length){
+
+if (word1.length > word2.length){       // Wenn word1 länger als word2 ist
     text = 'Das erste Wort ist länger.';
-} else if (word1.length == word2.length){
+} else if (word1.length == word2.length){       // Wenn beide Wörter gleich lang sind
     text = 'Die Wörter sind gleich lang.';
-} else {
+} else {        // Wenn word2 länger als word1 ist
     text = 'Das zweite Wort ist länger.';
 };
 console.log(text);
@@ -41,10 +42,11 @@ console.log(text);
 // Schreiben Sie eine while-Schleife, die von 0 bis 5 iteriert.
 // Während jeder Iteration soll der Wert von i mit 10 multipliziert und das Ergebnis dem Array 'list' hinzugefügt werden.
 console.log("== Übung 3.1b ==");
-while (i < 6){
-    var result = i * 10;
-    list.push(result);
-    i += 1;
+
+while (i < 6){      // Während i kleiner als 6 ist
+    var result = i * 10;        // Variable 'result' = 0*10, 1*10, 2*10, usw.
+    list.push(result);      // Variable 'result' der Liste hinzufügen
+    i += 1;     // i=i+1
 };
 console.log(list);
 
@@ -53,9 +55,10 @@ console.log(list);
 // Während jeder Iteration soll mithilfe einer Methode überprüft werden, ob i in der Liste 'numList' enthalten ist.
 // Trifft dies zu, soll der Wert anschließend in der Konsole ausgegeben werden.
 console.log("== Übung 3.1c ==");
-for (i = 0; i <= 10; i++){
-    if (numList.includes(i)){
-        console.log(i);
+
+for (i = 0; i <= 10; i++){      // i=0; solange i kleiner oder gleich 10 ist; i+1
+    if (numList.includes(i)){       // Wenn der Wert von i in der Liste ist
+        console.log(i);     // i ausgeben
     }
 };
 
@@ -72,11 +75,12 @@ console.log();
 //
 // Verwenden Sie dazu keine if-else-Anweisung oder andere Kontrollstrukturen.
 console.log("== Übung 3.2a ==");
+
 function numberIsOdd(num){
-    return !!(num % 2);
+    return !!(num % 2);     // Gibt Boolean zurück, Argument Modulus 2
 };
-console.log('3 : '+ numberIsOdd(3));
-console.log('8 : '+ numberIsOdd(8));
+console.log('3 : '+ numberIsOdd(3));        // Argument 3 ist ungerade
+console.log('8 : '+ numberIsOdd(8));        // Argument 8 ist gerade
 
 // Übung 3.2b
 // Schreiben Sie eine Funktion 'cantineActionDay', die
@@ -93,20 +97,21 @@ console.log('8 : '+ numberIsOdd(8));
 // Die Funktion soll das Argument case insensitive behandeln, d.h. 'Monday' oder 'MONDAY'
 // werden als 'monday' erkannt.
 console.log("== Übung 3.2b ==");
+
 function cantineActionDay(day){
     var txt;
-
-    switch (day.toLowerCase()){
-        case 'monday':
+    // switch
+    switch (day.toLowerCase()){     // Großbuchstaben werden durch Kleinbuchstaben ersetzt
+        case 'monday':      // Wenn Argument 'monday'
             txt = 'taco monday';
             break;
-        case 'wednesday':
+        case 'wednesday':       // Wenn Argument 'wednesday'
             txt = 'pizza wednesday';
             break;
-        case 'friday':
+        case 'friday':      // Wenn Argument 'friday'
             txt = 'pasta friday';
             break;
-        default:
+        default:        // Jedes andere Argument
             txt = 'no action';
             break;
     }
